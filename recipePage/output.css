@@ -597,10 +597,6 @@ video {
   justify-content: space-between;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -784,6 +780,10 @@ video {
 
   .sm\:w-\[400px\] {
     width: 400px;
+  }
+
+  .sm\:w-\[600px\] {
+    width: 600px;
   }
 
   .sm\:rounded-xl {
