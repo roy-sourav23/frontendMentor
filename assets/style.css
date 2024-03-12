@@ -34,7 +34,7 @@ h1 > a {
   margin: auto;
 }
 
-.cards {
+#cards {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
