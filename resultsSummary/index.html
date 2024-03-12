@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-full">
+    <div
+      class="w-full sm:w-[640px] bg-[#fff] flex flex-col sm:flex-row m-auto sm:translate-y-[30%] sm:rounded-xl font-hanken shadow-2xl shadow-cyan-600"
+    >
+      <div
+        class="w-full sm:w-[50%] bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue flex flex-col items-center rounded-b-xl sm:rounded-xl"
+      >
+        <p class="text-paleBlue py-6 capitalize font-semibold">Your result</p>
+        <div
+          class="rounded-full object-contain w-[130px] h-[130px] text-center bg-gradient-to-b from-violetBlue to-persianBlue font-bold py-5 leading-tight"
+        >
+          <span class="text-[54px] text-[#fff]">76</span> <br />
+          <span class="text-paleBlue pb-10">of 100</span>
+        </div>
+
+        <p class="font-bold text-[20px] text-[#fff] py-8 text-center">Great</p>
+        <p class="text-paleBlue font-bold px-14 pb-8 text-center">
+          You scored higher than 65% of the people who have taken these tests
+        </p>
+      </div>
+      <div class="p-8 w-full sm:w-[50%]">
+        <h1 class="font-extrabold text-darkGrayBlue text-[18px]">Summary</h1>
+        <div class="flex flex-col gap-4 py-5">
+          <div
+            class="relative flex flex-row justify-between bg-lightRed/10 p-5 sm:p-3 rounded-xl"
+          >
+            <div class="flex gap-4">
+              <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+              <span class="text-lightRed font-bold">Reaction</span>
+            </div>
+            <p class="font-bold text-[#000]/40">
+              <span class="text-darkGrayBlue">80</span> / 100
+            </p>
+          </div>
+
+          <div
+            class="relative flex flex-row justify-between bg-lightRed/10 p-5 sm:p-3 rounded-xl"
+          >
+            <div class="flex gap-4">
+              <img src="./assets/images/icon-memory.svg" alt="memory" />
+              <span class="text-orangeyYellow font-bold">Memory</span>
+            </div>
+            <p class="font-bold text-[#000]/40">
+              <span class="text-darkGrayBlue">92</span> / 100
+            </p>
+          </div>
+
+          <div
+            class="relative flex flex-row justify-between bg-greenTeal/10 p-5 sm:p-3 rounded-xl"
+          >
+            <div class="flex gap-4">
+              <img src="./assets/images/icon-verbal.svg" alt="verbal" />
+              <span class="text-greenTeal font-bold">Verbal</span>
+            </div>
+            <p class="font-bold text-[#000]/40">
+              <span class="text-darkGrayBlue">61</span> / 100
+            </p>
+          </div>
+
+          <div
+            class="relative flex flex-row justify-between bg-cobaltBlue/10 p-5 sm:p-3 rounded-xl"
+          >
+            <div class="flex gap-4">
+              <img src="./assets/images/icon-visual.svg" alt="visual" />
+              <span class="text-cobaltBlue font-bold">Visual</span>
+            </div>
+            <p class="font-bold text-[#000]/40">
+              <span class="text-darkGrayBlue">72</span> / 100
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="relative w-full bg-darkGrayBlue text-[#fff] p-3 capitalize text-[18px] font-bold rounded-2xl hover:bg-gradient-to-b hover:from-lightSlateBlue hover:to-lightRoyalBlue"
+        >
+          continue
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
