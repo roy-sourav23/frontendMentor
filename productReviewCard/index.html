@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Product Review Card | FrontendMentor</title>
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="min-h-screen bg-cream flex items-center justify-center overflow-x-hidden"
+  >
+    <div
+      class="w-full sm:w-[600px] mx-4 sm:mx-0 my-4 sm:my-0 flex flex-col sm:flex-row rounded-xl overflow-hidden bg-[white]"
+    >
+      <div class="w-full sm:w-[50%]">
+        <picture>
+          <source
+            media="(min-width: 640px)"
+            srcset="./assets/image-product-desktop.jpg"
+            class="w-full"
+          />
+          <img src="./assets/image-product-mobile.jpg" alt="" class="w-full" />
+        </picture>
+      </div>
+      <div class="p-6 w-full sm:w-[50%]">
+        <p
+          class="font-montserrat uppercase font-medium text-[14px] text-darkGrayishBlue tracking-[0.27em]"
+        >
+          perfume
+        </p>
+        <h1
+          class="font-fraunces text-[2.6rem] leading-none py-3 text-veryDarkBlue"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p
+          class="font-montserrat font-medium text-darkGrayishBlue text-[15px] py-2"
+        >
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <p class="flex items-center gap-3">
+          <span class="font-fraunces text-[2.4rem] text-green">$149.99</span>
+          <span
+            class="font-montserrat text-[0.8rem] line-through text-darkGrayishBlue"
+            >$169.99</span
+          >
+        </p>
+
+        <button
+          class="relative w-full bg-green active:opacity-80 flex items-center justify-center gap-2 p-3 rounded-xl mt-4 outline-none"
+        >
+          <img src="./assets/icon-cart.svg" alt="" />
+          <span class="text-[white] font-montserrat font-bold text-[15px]"
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
