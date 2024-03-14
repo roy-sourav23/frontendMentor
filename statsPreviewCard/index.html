@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Stats preview card | Frontend Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <div
+      role="main"
+      class="bg-mainBgColor min-h-screen flex items-center justify-center w-full"
+    >
+      <div
+        aria-label="stats-preview-card"
+        class="bg-cardBgColor w-full max-w-[400px] md:max-w-[750px] m-6 md:m-0 flex flex-col md:flex-row-reverse rounded-lg overflow-hidden"
+      >
+        <div aria-label="card-image" class="relative w-full md:w-[50%]">
+          <picture>
+            <source
+              media="(min-width:768px)"
+              srcset="./assets/image-header-desktop.jpg"
+            />
+            <img src="./assets/image-header-mobile.jpg" alt="mobile image" />
+          </picture>
+
+          <div class="absolute inset-0 bg-softViolet opacity-50"></div>
+        </div>
+
+        <div
+          aria-label="card-info "
+          class="w-full md:w-[50%] p-7 md:p-12 text-center md:text-left flex flex-col justify-center items-center md:mr-[35px]"
+        >
+          <h1
+            aria-label="main-heading"
+            class="font-inter font-bold text-[white] text-[25px] leading-tight"
+          >
+            Get
+            <span class="text-softViolet text-brightness-50">insights</span>
+            that help your business grow.
+          </h1>
+          <p class="text-mainParagraph text-[11px] py-4 px-6 md:px-0">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <ul
+            aria-label="stats"
+            class="flex flex-col md:flex-row items-center gap-5 md:gap-14 w-full mt-5"
+          >
+            <li class="flex flex-col items-center md:items-start">
+              <h2 class="text-[white] text-[14px] font-bold">10k+</h2>
+              <span
+                class="text-statHeadings text-[8px] font-lexendDeca uppercase"
+                >companies</span
+              >
+            </li>
+
+            <li class="flex flex-col items-center md:items-start">
+              <h2 class="text-[white] text-[14px] font-bold">314</h2>
+              <span
+                class="text-mainParagraph text-[8px] font-lexendDeca uppercase"
+                >templates</span
+              >
+            </li>
+
+            <li class="flex flex-col items-center md:items-start">
+              <h2 class="text-[white] text-[14px] font-bold uppercase">12m+</h2>
+              <span
+                class="text-mainParagraph text-[8px] font-lexendDeca uppercase"
+                >queries</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
