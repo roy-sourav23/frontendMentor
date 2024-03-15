@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>3-column preview card | Frontend Mentor</title>
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-veryLightGray min-h-screen flex items-center justify-center">
+      <div
+        id="cards"
+        class="grid grid-cols-1 lg:grid-cols-3 my-3 rounded-xl overflow-hidden m-3 xl:m-0"
+      >
+        <div
+          class="card w-[350px] h-[450px] flex flex-col gap-6 bg-brightOrange py-12 px-14"
+        >
+          <img
+            src="./assets/icon-sedans.svg"
+            alt="sedan icon"
+            width="70"
+            height="70"
+            class="object-contain"
+          />
+          <h1
+            class="font-bigShouldersDisplay text-[40px] text-veryLightGray uppercase"
+          >
+            Sedans
+          </h1>
+          <p class="font-lexendDeca text-transparentWhite text-[15px]">
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+
+          <div>
+            <button
+              class="font-lexendDeca bg-veryLightGray active:bg-brightOrange text-brightOrange active:text-[white] text-[15px] py-3 px-7 rounded-[25px] border border-[2px] border-veryLightGray"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="card w-[350px] h-[450px] flex flex-col gap-6 bg-darkCyan py-12 px-14"
+        >
+          <img
+            src="./assets/icon-suvs.svg"
+            alt="suvs icon"
+            width="70"
+            height="70"
+            class="object-contain"
+          />
+          <h1
+            class="font-bigShouldersDisplay text-[40px] text-veryLightGray uppercase"
+          >
+            SUVs
+          </h1>
+          <p class="font-lexendDeca text-transparentWhite text-[15px]">
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+
+          <div>
+            <button
+              class="font-lexendDeca bg-veryLightGray active:bg-darkCyan text-darkCyan active:text-[white] text-[15px] py-3 px-7 rounded-[25px] border border-[2px] border-veryLightGray"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="card w-[350px] h-[450px] flex flex-col justify-between gap-6 bg-veryDarkCyan py-12 px-14"
+        >
+          <img
+            src="./assets/icon-luxury.svg"
+            alt="luxury icon"
+            width="70"
+            height="70"
+            class="object-contain"
+          />
+          <h1
+            class="font-bigShouldersDisplay text-[40px] text-veryLightGray uppercase"
+          >
+            Luxury
+          </h1>
+          <p class="font-lexendDeca text-transparentWhite text-[15px]">
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+
+          <div>
+            <button
+              class="font-lexendDeca bg-veryLightGray active:bg-veryDarkCyan text-veryDarkCyan active:text-[white] text-[15px] py-3 px-7 rounded-[25px] border border-[2px] border-veryLightGray"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
