@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Profile card component | Frontend Mentor</title>
+    <link rel="stylesheet" href="src/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main min-h-screen flex-center">
+      <div
+        id="card"
+        class="w-[340px] h-[400px] rounded-xl overflow-hidden font-kumbh text-center"
+      >
+        <div class="">
+          <img src="./assets/bg-pattern-card.svg" alt="" />
+        </div>
+        <div class="relative bg-[white] h-full">
+          <div
+            class="absolute left-[50%] -translate-x-[50%] -translate-y-[50%] border border-4 border-[white] rounded-full overflow-hidden"
+          >
+            <img
+              src="./assets/image-victor.jpg"
+              alt="victor"
+              class="object-contain"
+            />
+          </div>
+          <div class="pt-20 pb-8 border-b border-b-1 border-b-darkGray/40">
+            <h1 class="font-bold text-[18px] text-darkGrayishBlue">
+              Victor Crest
+              <span class="text-darkGray font-medium pl-2">26</span>
+            </h1>
+            <p class="text-darkGray pt-2 font-medium">London</p>
+          </div>
+          <div class="translate-y-[50%]">
+            <ul class="flex justify-around items-center w-full">
+              <li class="">
+                <h1 class="text-[18px] text-darkGrayishBlue font-bold">80K</h1>
+                <p class="text-[12px] text-darkGray">Followers</p>
+              </li>
+              <li>
+                <h1 class="text-[18px] text-darkGrayishBlue font-bold">803K</h1>
+                <p class="text-[12px] text-darkGray">Likes</p>
+              </li>
+              <li>
+                <h1 class="text-[18px] text-darkGrayishBlue font-bold">1.4K</h1>
+                <p class="text-[12px] text-darkGray">Photos</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
