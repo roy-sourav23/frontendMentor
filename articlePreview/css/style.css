@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --desaturatedDarkBlue: hsl(214, 17%, 51%);
+  --grayishBlue: hsl(212, 23%, 69%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Manrope", "sans-serif";
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--lightGrayishBlue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 80%;
+  max-width: 375px;
+  height: auto;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1rem;
+  position: relative;
+}
+
+.card--img {
+  background-image: url(../images/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card--text {
+  padding: 1.8rem;
+}
+
+.card--title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--veryDarkGrayishBlue);
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--grayishBlue);
+  margin: 1rem 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile--info {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.profile--info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+.profile--info p {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--veryDarkGrayishBlue);
+}
+
+.profile--info span {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--grayishBlue);
+}
+
+.share-btn-block {
+  display: flex;
+}
+
+.share-btn-block > img {
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-color: var(--lightGrayishBlue);
+  cursor: pointer;
+
+  display: inline-block;
+}
+
+.share-btn-block > img:hover,
+.share-btn-block > img:active {
+  background-color: white;
+  background-color: var(--veryDarkGrayishBlue);
+}
+
+#share-btn--info {
+  width: 225px;
+  background-color: var(--veryDarkGrayishBlue);
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.7rem 1.8rem;
+
+  position: absolute;
+  z-index: 1;
+  right: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#share-btn--info > p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--desaturatedDarkBlue);
+  margin-right: 0.7rem;
+}
+
+.share--icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 740px) {
+  .card {
+    max-width: 740px;
+    height: auto;
+
+    flex-direction: row;
+  }
+  .card--img {
+    width: 120%;
+    height: auto;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .card--title {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 13px;
+    margin: 1rem 0;
+  }
+
+  #share-btn--info {
+    width: 225px;
+    background-color: var(--veryDarkGrayishBlue);
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.7rem 1.8rem;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 45%;
+    right: 0%;
+    margin: -45px -82px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #share-btn--info::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -23px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--veryDarkGrayishBlue) transparent transparent transparent;
+  }
+
+  #share-btn--info > p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--desaturatedDarkBlue);
+    margin-right: 0.7rem;
+  }
+
+  .share--icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
